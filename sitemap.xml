@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     sitemap.xml – RRajeshwari Travels
+     Domain: https://rrajeshwaritn91.in
+     Submit to: Google Search Console & Bing Webmaster Tools
+     Last Updated: 2025-01-01
+     ============================================================ -->
+ 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xsi:schemaLocation="
+          http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+          http://www.google.com/schemas/sitemap-image/1.1
+          http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+ 
+  <!-- ── Homepage (Highest Priority) ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/og-image.jpg</image:loc>
+      <image:title>RRajeshwari Travels – Premium Car and Van Rental in Tittakudi, Tamil Nadu</image:title>
+      <image:caption>RRajeshwari Travels fleet of AC tourist vans and cars for Tamil Nadu travel</image:caption>
+      <image:geo_location>Tittakudi, Tamil Nadu, India</image:geo_location>
+      <image:license>https://rrajeshwaritn91.in/</image:license>
+    </image:image>
+  </url>
+ 
+  <!-- ── About Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+ 
+  <!-- ── Vehicles / Fleet Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#vehicles</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/vehicles/luxury-tourist-van.jpg</image:loc>
+      <image:title>Luxury Tourist Van 12 Seats – RRajeshwari Travels Tittakudi</image:title>
+      <image:caption>AC 12-seat luxury tourist van for hire in Tittakudi and Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/vehicles/family-travel-van.jpg</image:loc>
+      <image:title>Family Travel Van 15 Seats – RRajeshwari Travels</image:title>
+      <image:caption>15-seat AC family travel van for hire in Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/vehicles/wedding-event-van.jpg</image:loc>
+      <image:title>Wedding Event Van 10 Seats – RRajeshwari Travels</image:title>
+      <image:caption>Decorated wedding transport van in Tittakudi Tamil Nadu</image:caption>
+    </image:image>
+  </url>
+ 
+  <!-- ── Services Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#services</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+ 
+  <!-- ── Gallery Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#gallery</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/gallery/van-fleet.jpg</image:loc>
+      <image:title>RRajeshwari Travels Luxury Van Fleet – Tamil Nadu</image:title>
+      <image:caption>Luxury tourist van fleet available for all travel services in Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/gallery/wedding-trip.jpg</image:loc>
+      <image:title>Wedding Transport Service – RRajeshwari Travels</image:title>
+      <image:caption>Premium wedding transport van for ceremonies and receptions in Tittakudi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/gallery/temple-tour.jpg</image:loc>
+      <image:title>Temple Tour Van – Tirupati Rameswaram Tours from Tittakudi</image:title>
+      <image:caption>Temple pilgrimage tours from Tittakudi to all major temples in Tamil Nadu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/gallery/airport-drop.jpg</image:loc>
+      <image:title>Airport Pickup Drop Service – RRajeshwari Travels Tamil Nadu</image:title>
+      <image:caption>Reliable airport pickup and drop service from Tittakudi to Chennai Trichy Coimbatore airports</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rrajeshwaritn91.in/gallery/family-tour.jpg</image:loc>
+      <image:title>Family Tour Van Rental Tamil Nadu – RRajeshwari Travels</image:title>
+      <image:caption>Spacious AC van for family tours across Tamil Nadu</image:caption>
+    </image:image>
+  </url>
+ 
+  <!-- ── Testimonials Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#testimonials</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+ 
+  <!-- ── FAQ Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#faq</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+ 
+  <!-- ── Booking Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#booking</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+ 
+  <!-- ── Contact Section ── -->
+  <url>
+    <loc>https://rrajeshwaritn91.in/#contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+ 
+</urlset>
+ 

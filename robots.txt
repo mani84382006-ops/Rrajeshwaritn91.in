@@ -1,0 +1,48 @@
+# ============================================================
+# robots.txt – RRajeshwari Travels
+# Domain: https://rrajeshwaritn91.in
+# Last Updated: 2025
+# ============================================================
+ 
+# Allow ALL major search engine crawlers
+User-agent: *
+Allow: /
+ 
+# Allow Googlebot specifically
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+ 
+# Allow Google Image bot
+User-agent: Googlebot-Image
+Allow: /
+ 
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+ 
+# Block bad bots (optional but recommended)
+User-agent: AhrefsBot
+Disallow: /
+ 
+User-agent: SemrushBot
+Disallow: /
+ 
+User-agent: MJ12bot
+Disallow: /
+ 
+User-agent: DotBot
+Disallow: /
+ 
+# Disallow admin or private paths (add yours here if any)
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /cgi-bin/
+ 
+# Sitemap location
+Sitemap: https://rrajeshwaritn91.in/sitemap.xml
+Sitemap: https://rrajeshwaritn91.in/sitemap-images.xml
