@@ -211,3 +211,157 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavActiveState();
   initBookingButtons();
 });
+
+/* =========================================================
+   GET USER LIVE LOCATION
+   ========================================================= */
+
+function getLocation() {
+
+  const locationInput = document.getElementById("geoLocation");
+
+  if (!navigator.geolocation) {
+    alert("Geolocation not supported");
+    return;
+  }
+
+  locationInput.value = "Fetching location...";
+
+  navigator.geolocation.getCurrentPosition(
+
+    function(position) {
+
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      const googleMapsLink =
+        `https://www.google.com/maps?q=${latitude},${longitude}`;
+
+      locationInput.value = googleMapsLink;
+    },
+
+    function(error) {
+      alert("Unable to fetch location");
+      locationInput.value = "";
+    }
+
+  );
+}
+
+
+/* =========================================================
+   EGG ORDER WHATSAPP FUNCTION
+   ========================================================= */
+
+function sendEggOrder() {
+
+  const name = document.getElementById('customerName').value;
+  const mobile = document.getElementById('customerMobile').value;
+  const qty = document.getElementById('eggQty').value;
+  const address = document.getElementById('customerAddress').value;
+  const location = document.getElementById('geoLocation').value;
+
+  const message = `
+🥚 *New Egg Order*
+
+👤 Name: ${name}
+
+📞 Mobile: ${mobile}
+
+🥚 Quantity: ${qty}
+
+🏠 Address:
+${address}
+
+📍 Location:
+${location}
+`;
+
+  const whatsappURL =
+    `https://wa.me/917373494940?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappURL, '_blank');
+}
+
+/* =========================================================
+   GET USER LIVE LOCATION
+   ========================================================= */
+
+function getLocation() {
+
+  const locationInput =
+    document.getElementById("geoLocation");
+
+  if (!navigator.geolocation) {
+
+    alert("Geolocation not supported");
+    return;
+  }
+
+  locationInput.value = "Fetching location...";
+
+  navigator.geolocation.getCurrentPosition(
+
+    function(position) {
+
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      const mapsLink =
+        `https://www.google.com/maps?q=${latitude},${longitude}`;
+
+      locationInput.value = mapsLink;
+    },
+
+    function(error) {
+
+      alert("Unable to fetch location");
+      locationInput.value = "";
+    }
+
+  );
+}
+
+
+/* =========================================================
+   SEND WHATSAPP ORDER
+   ========================================================= */
+
+function sendChickenOrder() {
+
+  const name =
+    document.getElementById("customerName").value;
+
+  const mobile =
+    document.getElementById("customerMobile").value;
+
+  const quantity =
+    document.getElementById("orderQty").value;
+
+  const address =
+    document.getElementById("customerAddress").value;
+
+  const location =
+    document.getElementById("geoLocation").value;
+
+  const message = `
+🍗 *New Chicken Shop Order*
+
+👤 Name: ${name}
+
+📞 Mobile: ${mobile}
+
+📦 Quantity: ${quantity}
+
+🏠 Address:
+${address}
+
+📍 Location:
+${location}
+`;
+
+  const whatsappURL =
+    `https://wa.me/917373494940?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappURL, "_blank");
+}

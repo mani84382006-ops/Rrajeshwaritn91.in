@@ -700,6 +700,254 @@
     </div>
   </footer>
 
+
+
+<!-- ===================== ONLINE ORDER SECTION ===================== -->
+<section class="booking" id="order">
+  <div class="booking-inner">
+
+    <div class="section-tag">Online Order</div>
+
+    <h2 class="section-title">
+      Fresh <span class="gold">Egg Order</span>
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="booking-sub">
+      Fill your details and send your egg order directly through WhatsApp.
+    </p>
+
+    <form id="eggOrderForm">
+
+      <div class="form-grid">
+
+        <!-- Customer Name -->
+        <div class="form-group">
+          <label for="customerName">Customer Name</label>
+          <input 
+            type="text" 
+            id="customerName" 
+            placeholder="Enter Your Name"
+            required
+          >
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+          <label for="customerMobile">Mobile Number</label>
+          <input 
+            type="tel" 
+            id="customerMobile" 
+            placeholder="Enter Mobile Number"
+            required
+          >
+        </div>
+
+        <!-- Egg Quantity -->
+        <div class="form-group">
+          <label for="eggQty">Egg Quantity</label>
+          <select id="eggQty" required>
+            <option value="">Select Quantity</option>
+            <option>30 Eggs Tray</option>
+            <option>60 Eggs</option>
+            <option>90 Eggs</option>
+            <option>120 Eggs</option>
+            <option>Custom Quantity</option>
+          </select>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group full">
+          <label for="customerAddress">Delivery Address</label>
+          <textarea 
+            id="customerAddress" 
+            rows="4"
+            placeholder="Enter Full Address"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Geo Location -->
+<div class="form-group full">
+  <label for="geoLocation">Geo Location</label>
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap;">
+
+    <input 
+      type="text" 
+      id="geoLocation"
+      placeholder="Click Get Location Button"
+      readonly
+    >
+
+    <button 
+      type="button"
+      class="btn-outline"
+      onclick="getLocation()"
+    >
+      Get Location
+    </button>
+
+  </div>
+</div>
+      <!-- Buttons -->
+      <div class="form-btns">
+
+        <button 
+          type="button" 
+          class="btn-gold"
+          onclick="sendEggOrder()"
+        >
+          Order Now
+        </button>
+
+        <a 
+          href="https://wa.me/917373494940"
+          target="_blank"
+          class="wa-btn"
+        >
+          WhatsApp Chat
+        </a>
+
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== CHICKEN SHOP ORDER ===================== -->
+<section class="booking" id="order">
+
+  <div class="booking-inner">
+
+    <div class="section-tag">
+      Fresh Chicken & Eggs
+    </div>
+
+    <h2 class="section-title">
+      Online <span class="gold">Order</span>
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="booking-sub">
+      Fill your details and order directly through WhatsApp.
+    </p>
+
+    <form id="shopOrderForm">
+
+      <div class="form-grid">
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="customerName">Customer Name</label>
+
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter Your Name"
+            required
+          >
+        </div>
+
+        <!-- Mobile -->
+        <div class="form-group">
+          <label for="customerMobile">Mobile Number</label>
+
+          <input
+            type="tel"
+            id="customerMobile"
+            placeholder="Enter Mobile Number"
+            required
+          >
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-group">
+          <label for="orderQty">Quantity</label>
+
+          <select id="orderQty" required>
+            <option value="">Select Quantity</option>
+            <option>1 KG</option>
+            <option>2 KG</option>
+            <option>3 KG</option>
+            <option>5 KG</option>
+            <option>10 KG</option>
+          </select>
+        </div>
+
+        <!-- Geo Location -->
+        <div class="form-group">
+          <label for="geoLocation">Geo Location</label>
+
+          <div style="display:flex; gap:10px;">
+
+            <input
+              type="text"
+              id="geoLocation"
+              placeholder="Click Get Location"
+              readonly
+            >
+
+            <button
+              type="button"
+              class="btn-outline"
+              onclick="getLocation()"
+            >
+              Get Location
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group full">
+          <label for="customerAddress">
+            Delivery Address
+          </label>
+
+          <textarea
+            id="customerAddress"
+            rows="4"
+            placeholder="Enter Full Address"
+            required
+          ></textarea>
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-btns">
+
+        <button
+          type="button"
+          class="btn-gold"
+          onclick="sendChickenOrder()"
+        >
+          Order Now
+        </button>
+
+        <a
+          href="https://wa.me/917373494940"
+          target="_blank"
+          class="wa-btn"
+        >
+          WhatsApp Chat
+        </a>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+
   <!-- ===================== FLOATING BUTTONS ===================== -->
   <a href="https://wa.me/917373494940" class="wa-float--fixed" title="Chat on WhatsApp" aria-label="WhatsApp Chat">💬</a>
   <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top" title="Back to top">↑</button>
