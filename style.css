@@ -1,7 +1,7 @@
 /* ============================================================
-   RRajeshwari Travels – style.css
+   Rajeshwari Travels – style.css
    Premium Gold & Black Luxury Theme
-   Author: RRajeshwari Travels
+   Author: Rajeshwari Travels
    ============================================================ */
 
 /* ============================================================
@@ -61,7 +61,7 @@
    03. BASE / TYPOGRAPHY
    ============================================================ */
 body {
-  background: var(--dark);
+  background: var(--pink);
   color: var(--text);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
@@ -102,7 +102,7 @@ a {
 /* Gold CTA Button */
 .btn-gold {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: #000;
+  color: #000000b8;
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -118,7 +118,7 @@ a {
 .btn-gold:hover {
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 25px rgba(117, 7, 80, 0.4);
 }
 
 /* Outline Button */
@@ -840,38 +840,52 @@ nav {
 }
 
 /* Featured item spans 2 cols & 2 rows */
-.g-item--featured {
-  grid-column: span 2;
-  grid-row: span 2;
+.g-img{
+width:100%;
+height:100%;
+overflow:hidden;
+position:relative;
 }
 
-.g-img {
-  width: 100%;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  border: 1px solid rgba(212, 175, 55, 0.1);
+.gallery-image{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+transition:0.4s ease;
 }
 
-.g-img--featured  { height: 370px; font-size: 6rem; background: linear-gradient(135deg, #1a1500, #0d0d0d); }
-.g-img--wedding   { background: linear-gradient(135deg, #001520, #0d0d0d); }
-.g-img--temple    { background: linear-gradient(135deg, #150010, #0d0d0d); }
-.g-img--sedan     { background: linear-gradient(135deg, #001510, #0d0d0d); }
-.g-img--family    { background: linear-gradient(135deg, #150500, #0d0d0d); }
-.g-img--airport   { background: linear-gradient(135deg, #100015, #0d0d0d); }
-
-.g-label {
-  font-size: 0.8rem;
-  color: var(--gold);
-  margin-top: 0.3rem;
+.g-item{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+min-height:180px;
 }
 
-.g-img--featured .g-label {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+.g-item--featured{
+grid-column:span 2;
+grid-row:span 2;
+min-height:370px;
+}
+
+.g-item:hover .gallery-image{
+transform:scale(1.05);
+}
+
+.g-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.25);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2rem;
+opacity:0;
+transition:0.3s ease;
+}
+
+.g-item:hover .g-overlay{
+opacity:1;
 }
 
 .g-overlay {
