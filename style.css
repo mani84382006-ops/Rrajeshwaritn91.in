@@ -1198,6 +1198,94 @@ opacity:1;
   padding: 10px 20px;
 }
 
+/* ============================================================
+   15.6. INSURANCE SECTION (R.R INSURANCE)
+   ============================================================ */
+
+.insurance-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #0B0B0B, #141410);
+  text-align: center;
+}
+
+.insurance-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.insurance-card {
+  margin-top: 2rem;
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 14px;
+  padding: 2.5rem;
+  text-align: left;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top gold glow line */
+.insurance-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+/* Title inside card */
+.insurance-card h3 {
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* List styling */
+.insurance-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.insurance-card ul li {
+  padding: 0.6rem 0;
+  font-size: 14px;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.insurance-card ul li:hover {
+  color: var(--gold);
+  padding-left: 8px;
+}
+
+/* Contact text */
+.insurance-contact {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 8px;
+}
+
+.insurance-contact p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0.3rem 0;
+}
+
+/* Buttons spacing fix */
+.insurance-section .form-btns {
+  justify-content: flex-start;
+}
+
+
+
+
 
 /* ============================================================
    15. FOOTER
